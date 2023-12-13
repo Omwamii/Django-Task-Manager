@@ -1,7 +1,31 @@
-import React, { component } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
 const tasks = [
+  {
+    id: 2,
+    title: "Dunning",
+    description: "sending dunning letters to clients for uncoll cash",
+    completed: false
+  },
+  {
+    id: 3,
+    title: "Dunning",
+    description: "sending dunning letters to clients for uncoll cash",
+    completed: false
+  },
+  {
+    id: 4,
+    title: "Dunning",
+    description: "sending dunning letters to clients for uncoll cash",
+    completed: false
+  },
+  {
+    id: 5,
+    title: "Dunning",
+    description: "sending dunning letters to clients for uncoll cash",
+    completed: false
+  }
 ]
 
 class App extends Component() {
@@ -16,7 +40,13 @@ class App extends Component() {
 
 displayCompleted = status => {
   if (status) {
-    return this.setstatus
+    return this.setstatus({viewCompleted: true})
   }
+  return this.setstatus({viewCompleted: false})
+}
+
+
+renderTabList = () => {
+  
 }
 export default App;
