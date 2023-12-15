@@ -33,7 +33,7 @@ class CustomModal extends Component{
     render() {
         const { toggle, onSave } = this.props;
         return(
-            <Modal isOpen={true} toggle={toggle} >
+            <Modal backdrop="static" isOpen={true} toggle={toggle} >
                 <ModalHeader toggle={toggle}>Task Item</ModalHeader>
                 <ModalBody>
                 <Form>
